@@ -1,0 +1,243 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+
+header{
+    background-color: #E21837;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.hero{
+    background-image: url("https://images.pexels.com/photos/616401/pexels-photo-616401.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+.list{
+    background-image: url("https://www.phocafe.co.uk/wp-content/uploads/2018/07/Nutrition-Single-Background.jpg");
+    padding: 50px 0px;
+    overflow: scroll; 
+   
+}
+.menu{
+    background-image: url("https://www.phocafe.co.uk/wp-content/uploads/2018/07/Nutrition-Single-Background.jpg");
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-article{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.hero-article h1{
+    font-size: 9vw;
+}
+.hero-article p{
+    font-size: 4vw;
+}
+.linker{
+    color: white;
+    margin: 0px 2px ;
+    background-color: #E21837;
+    font-weight: 600;
+    padding: 10px 20px  !important;
+}
+.linker:hover
+{
+    transition: all 1s;
+    background-color: black;
+    color: white;
+}
+
+/* Menu */
+
+.menu-header
+{
+    background-color: rgba(255, 255, 255, 0.82);
+    padding: 5px 50px;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.menu-left,.menu-right{
+    height: 60vh;
+    width: 45%;
+}
+.menu-right{
+    padding:  5px 10px;
+   
+    overflow-y: scroll;
+    background-color: rgba(255, 255, 255, 0.829);
+}
+.menu-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 70px !important ;
+}
+.book{
+    font-size: 2rem;
+    transition: all 1s;
+    background-color: #E21837;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px !important;
+}
+.book:hover{
+    background-color: black;
+    scale: 1.1 1;
+}
+.main-h1{
+    background-color: #E21837;
+    margin: 0;
+    color: white;
+}
+
+
+/* Menu */
+
+.booking{
+    background-color: rgba(11, 3, 3, 0.797);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 120vh;
+    z-index: 100;
+}
+.animate
+{
+    animation: animateBooking;
+    animation-duration: 1s;
+}
+form{
+    padding: 10px 20px;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 10px;
+    box-shadow: 2px 1px 20px black;
+}
+
+.footer{
+    height:20vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer p{
+    color: white;
+}
+
+
+/* Reservation page */
+
+.list-table{
+    min-width: 900px;
+    max-height: 60vh;
+    overflow: scroll;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.874);
+}
+.animate-h1
+{
+    animation: animateH1;
+    animation-duration: 3s;
+}
+.animate-p
+{
+    animation: animateP;
+    animation-duration: 5s;
+}
+
+@keyframes animateBooking {
+    0%{
+        opacity: 0;
+        translate: 0px -400px;
+    }
+    
+}
+@keyframes animateP {
+    0%{
+        opacity: 0;
+        translate: -100px ;
+    }
+    50%{
+        opacity: 0;
+        translate : -100px;
+
+    }
+
+}
+
+@keyframes animateH1 {
+    0%{
+        opacity: 0;
+        scale: 2 1;
+        translate: 0px -500px   ;    
+    }
+    50%{
+        opacity: 0;
+        scale: 1.5 1;
+        
+    }
+}
+
+
+
+@media (max-width:900px) {
+   .menu{
+    flex-direction: column;
+    justify-content: center;
+   }
+   .menu-left,.menu-right{
+    width: 80%;
+
+   }
+   .menu-left
+   {
+    display: block;
+    height: 10vh;
+   }
+   form{
+    width: 90%;
+   }
+   
+   .menu-header{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+   }
+   .hero-article h1{
+    font-size: 12vw;
+}
+.hero-article p{
+    font-size: 6vw;
+}
+
+
+
+}

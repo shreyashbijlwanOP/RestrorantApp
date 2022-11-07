@@ -1,0 +1,8 @@
+model = {
+    id : 1,
+    name: "shreyash",
+    email:"shreyash.bijlwanmail@gmail.com",
+    date:"new Date()";,
+    time:"";
+    seats:"";
+}
