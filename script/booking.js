@@ -13,6 +13,7 @@
             <tr>
             <td>${index+1}</td>
             <td>${elem.name}</td>
+            <td>${elem.mobile}</td>
             <td>${elem.email}</td>
             <td>${elem.seats}</td>
             <td>${elem.time}</td>
