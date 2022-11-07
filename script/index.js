@@ -102,7 +102,7 @@ inputs.forEach(input=>{
 details.add(obj)
 alert("Reservation done Successfully")
 booking.classList.add("d-none")
-window.location.reload();
+
 }
 
 }
